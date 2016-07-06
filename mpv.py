@@ -1,3 +1,5 @@
+#Ask user for link to youtube video, then streams that video in the best quality using the mpv video player
+
 import subprocess
 
 youtube = input("Please enter a youtube link: ")

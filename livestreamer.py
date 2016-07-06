@@ -1,3 +1,7 @@
+#Small script that asks for twitch.tv channel name and quality, then proceeds to 
+#run livestreamer with those variables in place 
+
+
 import subprocess
 
 
