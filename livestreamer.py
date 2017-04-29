@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 #Small script that asks for twitch.tv channel name and quality, then proceeds to 
 #run livestreamer with those variables in place 
 
@@ -10,6 +12,7 @@ print ("\n")
 
 
 stream = input("Enter a twitch channel name: ")
-quality = input('Enter a quality level (Low, Medium, High, Source): ')
+quality = input('Enter a quality level (1080p60, 144p30, 240p30, 360p30, 480p30, 540p30, 720p30, 720p60, audio): ')
 
-subprocess.call(["C:\Program Files (x86)\Livestreamer\livestreamer.exe", 'twitch.tv/' + stream, quality])
+subprocess.call(["/usr/bin/livestreamer", 
+	'twitch.tv/' + stream, quality])
